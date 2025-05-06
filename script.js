@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Typing effect for the hero section
-const text = "AI & ML Student | Web Developer";
+const text = "AI & ML Student | Robotics Engineer | Tech Innovator";
 const typingText = document.querySelector('.typing-text');
 let i = 0;
 
