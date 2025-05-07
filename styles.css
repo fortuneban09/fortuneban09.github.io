@@ -524,3 +524,37 @@ nav {
         margin-top: 4rem;
     }
 }
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.social-links-text {
+    color: var(--text-color);
+    margin-right: 1rem;
+}
+
+.social-links a {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    
+    .social-links a {
+        font-size: 1.8rem;  /* Slightly larger on mobile for better visibility */
+        padding: 0.5rem;
+    }
+}
