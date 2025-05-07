@@ -335,13 +335,6 @@ nav {
     }
 }
 
-.subtitle {
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
 /* Add after existing styles */
 
 .tech-badges {
@@ -416,16 +409,5 @@ nav {
     
     .about-text p {
         font-size: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .subtitle {
-        font-size: 1.5rem;
-    }
-    
-    .hero-description {
-        font-size: 1rem;
-        margin: 1.5rem 0;
     }
 }
