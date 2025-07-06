@@ -342,18 +342,18 @@ nav {
 
     /* Hero Section */
     .hero {
-        padding-top: 4rem;  /* Add space at the top */
+        padding-top: 2rem;  /* Reduced space at the top */
     }
 
     .hero-content {
-        padding-top: 2rem;
-        margin-top: 3rem;  /* Push content down */
+        padding-top: 1rem;
+        margin-top: 1rem;  /* Reduced margin */
     }
 
     .hero-content h1 {
         font-size: 2.5rem;
-        margin-top: 2rem;
-        padding-top: 2rem;  /* Additional space above name */
+        margin-top: 0.5rem;  /* Reduced margin above name */
+        padding-top: 0.5rem;  /* Reduced padding above name */
     }
 
     /* Other mobile styles */
@@ -412,12 +412,12 @@ nav {
     }
 
     .hero-content {
-        padding-top: 5rem;
+        padding-top: 2rem;
     }
 
     .hero-content h1 {
         font-size: 2rem;
-        margin-top: 3rem;
+        margin-top: 0.5rem;
     }
 
     section {
@@ -510,13 +510,13 @@ nav {
     }
 
     .hero-content {
-        padding-top: 5rem;
-        margin-top: 2rem;
+        padding-top: 2rem;
+        margin-top: 1rem;
     }
 
     .hero-content h1 {
         font-size: 2.2rem;
-        margin-top: 3rem;
+        margin-top: 0.5rem;
     }
 
     .hero-content .subtitle {
@@ -550,11 +550,11 @@ nav {
     }
 
     .hero-content {
-        padding-top: 6rem;
+        padding-top: 2rem;
     }
 
     .hero-content h1 {
-        margin-top: 4rem;
+        margin-top: 0.5rem;
     }
 }
 
