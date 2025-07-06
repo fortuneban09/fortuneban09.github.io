@@ -236,6 +236,24 @@ nav {
     .project-tech {
         margin-top: 1rem;
     }
+
+    .hero-content {
+        padding-top: 0;
+        margin-top: 0;
+        gap: 0.5rem;
+    }
+    .hero-image {
+        margin: 0 auto 0.5rem auto;
+        height: auto;
+    }
+    .hero-text {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .hero-content h1 {
+        margin-top: 1rem;
+        padding-top: 0;
+    }
 }
 
 /* Additional Responsive Enhancements */
@@ -250,6 +268,24 @@ nav {
 
     .project-card {
         padding: 1.5rem;
+    }
+
+    .hero-content {
+        padding-top: 0;
+        margin-top: 0;
+        gap: 0.5rem;
+    }
+    .hero-image {
+        margin: 0 auto 0.5rem auto;
+        height: auto;
+    }
+    .hero-text {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .hero-content h1 {
+        margin-top: 1rem;
+        padding-top: 0;
     }
 }
 
