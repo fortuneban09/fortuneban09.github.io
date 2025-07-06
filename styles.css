@@ -1193,3 +1193,45 @@ section {
     display: none !important;
   }
 }
+
+/* Header quote styling */
+.header-quote {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .header-quote {
+        font-size: 0.85rem;
+        margin: 0 0.5rem;
+        max-width: 120px;
+    }
+}
+@media (max-width: 600px) {
+    .header-quote {
+        font-size: 0.7rem;
+        margin: 0 0.2rem;
+        max-width: 70px;
+    }
+}
+
+/* Fix anchor scroll offset for headings */
+section, .profile-summary, .education, .about, .hobbies, .extra-curricular {
+    scroll-margin-top: 70px;
+}
+@media (max-width: 768px) {
+    section, .profile-summary, .education, .about, .hobbies, .extra-curricular {
+        scroll-margin-top: 56px;
+    }
+}
