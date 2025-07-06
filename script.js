@@ -49,26 +49,26 @@ if (menuIcon && navLinks) {
   });
 }
 
-// Mobile Navigation Overlay Logic
+// Mobile Menu Overlay Logic
 const mobileMenuOpen = document.getElementById('mobile-menu-open');
-const mobileNavOverlay = document.getElementById('mobileNavOverlay');
-const mobileNavClose = document.getElementById('mobileNavClose');
-const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+const mobileMenuClose = document.getElementById('mobileMenuClose');
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
 const pageLoader = document.getElementById('page-loader');
 
-if (mobileMenuOpen && mobileNavOverlay && mobileNavClose) {
+if (mobileMenuOpen && mobileMenuOverlay && mobileMenuClose) {
   mobileMenuOpen.addEventListener('click', () => {
-    mobileNavOverlay.classList.add('active');
+    mobileMenuOverlay.classList.add('active');
   });
-  mobileNavClose.addEventListener('click', () => {
-    mobileNavOverlay.classList.remove('active');
+  mobileMenuClose.addEventListener('click', () => {
+    mobileMenuOverlay.classList.remove('active');
   });
 }
 
-mobileNavLinks.forEach(link => {
+mobileMenuLinks.forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
-    mobileNavOverlay.classList.remove('active');
+    mobileMenuOverlay.classList.remove('active');
     if (pageLoader) {
       pageLoader.classList.add('active');
     }

@@ -25,7 +25,7 @@
     <nav>
         <div class="nav-content">
             <div class="logo">FB</div>
-            <ul class="nav-links" style="display: flex;">
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#profile-summary">Profile Summary</a></li>
@@ -33,8 +33,28 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="mobile-menu-icon" id="mobile-menu-open">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-header">
+            <img src="images/profile.jpg" alt="Profile Picture" class="mobile-menu-profile" />
+            <div class="mobile-menu-name">Fortune Banda</div>
+            <div class="mobile-menu-close" id="mobileMenuClose"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="mobile-menu-links">
+            <a href="#home" class="mobile-menu-link"><i class="fas fa-home"></i> Home</a>
+            <a href="#about" class="mobile-menu-link"><i class="fas fa-user"></i> About</a>
+            <a href="#profile-summary" class="mobile-menu-link"><i class="fas fa-id-card"></i> Profile Summary</a>
+            <a href="#education" class="mobile-menu-link"><i class="fas fa-graduation-cap"></i> Education</a>
+            <a href="#projects" class="mobile-menu-link"><i class="fas fa-project-diagram"></i> Projects</a>
+            <a href="#contact" class="mobile-menu-link"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+    </div>
 
     <!-- Page Loader Spinner -->
     <div id="page-loader">
@@ -44,10 +64,10 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-image" style="margin: 0 auto 1.5rem auto;">
+            <div class="hero-image" style="margin: 0 auto 0.5rem auto;">
                 <img src="images/profile.jpg" alt="Profile Picture" />
             </div>
-            <div class="hero-text">
+            <div class="hero-text" style="margin-top: 0;">
                 <h1>Fortune Banda</h1>
                 <p class="subtitle">AI & ML Developer</p>
                 <p class="typing-text">AI & ML Student | Robotics Engineer | Tech Innovator</p>
