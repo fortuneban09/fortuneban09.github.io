@@ -1235,3 +1235,10 @@ section, .profile-summary, .education, .about, .hobbies, .extra-curricular {
         scroll-margin-top: 56px;
     }
 }
+
+.quote-mobile { display: none; }
+.quote-desktop { display: inline; }
+@media (max-width: 900px) {
+  .quote-desktop { display: none; }
+  .quote-mobile { display: inline; font-size: 0.85rem; }
+}
