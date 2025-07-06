@@ -1214,15 +1214,23 @@ section {
 @media (max-width: 900px) {
     .header-quote {
         font-size: 0.85rem;
-        margin: 0 0.5rem;
-        max-width: 120px;
+        margin: 0 0.2rem;
+        max-width: none;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+    .quote-desktop { display: none; }
+    .quote-mobile { display: inline; font-size: 0.85rem; }
 }
 @media (max-width: 600px) {
     .header-quote {
         font-size: 0.7rem;
-        margin: 0 0.2rem;
-        max-width: 70px;
+        margin: 0 0.1rem;
     }
 }
 
