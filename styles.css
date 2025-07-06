@@ -241,8 +241,8 @@ nav {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        padding-top: 0 !important;
-        margin-top: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
         gap: 0 !important;
     }
     .hero-image {
@@ -250,16 +250,26 @@ nav {
         padding: 0 !important;
     }
     .hero-image img {
-        margin-top: 2rem !important;
-        margin-bottom: 0.1rem !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+        border: none !important;
     }
     .hero-text {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
-    .hero-content h1 {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
+    .hero-content h1,
+    .hero-content .subtitle,
+    .hero-content .typing-text,
+    .hero-description,
+    .hero-description p,
+    .tech-badges,
+    .tech-badges span,
+    .social-links,
+    .social-links-text {
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 
@@ -269,8 +279,8 @@ nav {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        padding-top: 0 !important;
-        margin-top: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
         gap: 0 !important;
     }
     .hero-image {
@@ -278,16 +288,26 @@ nav {
         padding: 0 !important;
     }
     .hero-image img {
-        margin-top: 2rem !important;
-        margin-bottom: 0.1rem !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+        border: none !important;
     }
     .hero-text {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
-    .hero-content h1 {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
+    .hero-content h1,
+    .hero-content .subtitle,
+    .hero-content .typing-text,
+    .hero-description,
+    .hero-description p,
+    .tech-badges,
+    .tech-badges span,
+    .social-links,
+    .social-links-text {
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 
