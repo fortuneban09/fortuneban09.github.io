@@ -250,10 +250,13 @@ nav {
         padding: 0 !important;
     }
     .hero-image img {
-        margin: 0 !important;
+        width: 140px !important;
+        height: 140px !important;
+        margin: 0 auto !important;
         padding: 0 !important;
         display: block !important;
         border: none !important;
+        object-fit: cover !important;
     }
     .hero-text {
         margin: 0 !important;
@@ -288,10 +291,13 @@ nav {
         padding: 0 !important;
     }
     .hero-image img {
-        margin: 0 !important;
+        width: 120px !important;
+        height: 120px !important;
+        margin: 0 auto !important;
         padding: 0 !important;
         display: block !important;
         border: none !important;
+        object-fit: cover !important;
     }
     .hero-text {
         margin: 0 !important;
