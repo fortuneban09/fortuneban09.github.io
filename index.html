@@ -33,11 +33,29 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="mobile-menu-icon">
+            <div class="mobile-menu-icon" id="mobile-menu-open">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
+
+    <!-- Full-Screen Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-close" id="mobileNavClose"><i class="fas fa-times"></i></div>
+        <div class="mobile-nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#profile-summary">Profile Summary</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Page Loader Spinner -->
+    <div id="page-loader">
+        <div class="page-spinner"></div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">

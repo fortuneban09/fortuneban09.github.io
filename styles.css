@@ -895,3 +895,107 @@ section {
 .extra-curricular ul li {
   margin-bottom: 0.5rem;
 }
+
+/* Profile Image Responsive Fix */
+@media (max-width: 600px) {
+  .hero-image {
+    width: 120px;
+    height: 120px;
+    margin: 1.5rem auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+/* Full-Screen Mobile Navigation Overlay */
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 25, 47, 0.98);
+  z-index: 9999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+.mobile-nav-overlay.active {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  align-items: center;
+}
+.mobile-nav-links a {
+  color: var(--accent-color);
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.mobile-nav-links a:hover {
+  color: var(--primary-color);
+}
+.mobile-nav-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Hide default nav links on mobile */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none !important;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+/* Page Loading Spinner Overlay */
+#page-loader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 25, 47, 0.85);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+}
+#page-loader.active {
+  display: flex;
+}
+.page-spinner {
+  border: 6px solid #222b3a;
+  border-top: 6px solid var(--primary-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
