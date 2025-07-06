@@ -39,3 +39,12 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Hamburger menu for mobile navigation
+const menuIcon = document.querySelector('.mobile-menu-icon');
+const navLinks = document.querySelector('.nav-links');
+if (menuIcon && navLinks) {
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
