@@ -273,6 +273,15 @@ nav {
         padding: 0 !important;
         line-height: 1 !important;
     }
+
+    .mobile-menu-icon {
+        font-size: 1.2rem !important;
+        line-height: 1 !important;
+    }
+    .mobile-menu-icon i {
+        font-size: 1.2rem !important;
+        line-height: 1 !important;
+    }
 }
 
 /* Additional Responsive Enhancements */

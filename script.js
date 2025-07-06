@@ -83,17 +83,3 @@ mobileMenuLinks.forEach(link => {
     }, 900);
   });
 });
-
-// Extra: Close mobile menu overlay on scroll or click outside
-if (mobileMenuOverlay) {
-  // Close on scroll
-  window.addEventListener('scroll', () => {
-    mobileMenuOverlay.classList.remove('active');
-  });
-  // Close on click outside
-  mobileMenuOverlay.addEventListener('click', (e) => {
-    if (e.target === mobileMenuOverlay) {
-      mobileMenuOverlay.classList.remove('active');
-    }
-  });
-}
