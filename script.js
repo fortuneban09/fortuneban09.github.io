@@ -2,19 +2,21 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = this.getAttribute('href');
+        const section = target ? document.querySelector(target) : null;
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     });
 });
 
 // Typing effect for the hero section
-const text = "AI & ML Student | Web Developer";
+const text = "AI & ML | Robotics | Web Development";
 const typingText = document.querySelector('.typing-text');
 let i = 0;
 
 function typeWriter() {
-    if (i < text.length) {
+    if (typingText && i < text.length) {
         typingText.textContent += text.charAt(i);
         i++;
         setTimeout(typeWriter, 100);
@@ -23,8 +25,10 @@ function typeWriter() {
 
 // Start typing effect when page loads
 window.onload = () => {
-    typingText.textContent = '';
-    typeWriter();
+    if (typingText) {
+        typingText.textContent = '';
+        typeWriter();
+    }
 };
 
 // Reveal animations on scroll
